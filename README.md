@@ -543,86 +543,9 @@ AWS actions the script can perform.
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-
-## 19. Suggested GitHub repository structure
-
-``` text
-aws-resource-list/
-│
-├── aws_resource_list.sh
-├── README.md
-└── .gitignore
-```
-
-If you later add test scripts or documentation, place them in separate
-folders.
-
-A simple `.gitignore` can help prevent accidental commits of local
-files:
-
-``` gitignore
-.env
-*.pem
-.aws/
-```
-
-Do not copy AWS credentials into the project folder. Check `git status`
-before pushing to GitHub.
-
 ------------------------------------------------------------------------
 
-## 20. What you learn from this project
-
-After completing the project, you should be able to explain:
-
--   What a shell script is and why DevOps engineers use it.
--   How to accept command-line arguments in Bash.
--   What `$0`, `$1`, `$2`, and `$#` mean.
--   Why input validation is important.
--   How to check whether a command is installed.
--   How AWS CLI communicates with AWS.
--   Why AWS CLI must have working credentials.
--   How to use a `case` statement.
--   How to make a script executable.
--   How Linux file permissions work.
--   How cron can schedule a recurring task.
-
-------------------------------------------------------------------------
-
-## 21. Interview explanation
-
-You can describe the project in simple language:
-
-> I created a Bash automation script that lists selected AWS resources
-> based on the Region and service name supplied by the user. The script
-> first validates the command-line arguments, checks whether AWS CLI is
-> installed, and verifies that AWS credentials are working. It then uses
-> a case statement to execute the appropriate AWS CLI command for the
-> selected service. I also considered input validation, IAM permissions,
-> script permissions, and the option to schedule the script using cron.
-
-Be ready to explain what you personally implemented and demonstrate the
-script. Do not claim that cron scheduling, email reporting, or
-additional AWS services are implemented unless you have actually added
-and tested them.
-
-------------------------------------------------------------------------
-
-## 22. Practice assignments
-
-Try these tasks after completing the basic script:
-
-1.  Add one more AWS service to the `case` statement.
-2.  Add a clearer error message for an invalid Region.
-3.  Display a short heading before the resource output.
-4.  Save command output to a log file.
-5.  Add a cron schedule and test it.
-6.  Document the IAM permissions needed for each supported service.
-7.  Test the script with an IAM role instead of long-lived access keys.
-
-------------------------------------------------------------------------
-
-## 23. Useful official documentation
+## 19. Useful official documentation
 
 -   [AWS CLI
     installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
@@ -636,7 +559,7 @@ Try these tasks after completing the basic script:
 
 ------------------------------------------------------------------------
 
-## 24. Project completion checklist
+## 20. Project completion checklist
 
 -   [ ] Create the project folder.
 -   [ ] Create `aws_resource_list.sh`.
@@ -652,8 +575,4 @@ Try these tasks after completing the basic script:
 -   [ ] Add the files to GitHub without committing secrets.
 -   [ ] Try the optional cron assignment.
 
-**Important scope note:** This README is a step-by-step guide based on
-the supplied tutorial transcript. The transcript explains the project
-workflow and demonstrates EC2 and S3 listing, but it does not provide
-the complete final script source. Build and test the script before
-describing the repository as a finished implementation.
+
