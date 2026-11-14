@@ -1,8 +1,6 @@
 # AWS Resource Listing Automation Using Bash
 
 
-# AWS Resource Listing Automation Using Bash
-
 ---
 
 
