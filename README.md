@@ -1,8 +1,5 @@
+
 # AWS Resource Listing Automation Using Bash
-
-
----
-
 
 A beginner-friendly DevOps shell-scripting project that uses the **AWS
 Command Line Interface (AWS CLI)** to list active AWS resources in a
